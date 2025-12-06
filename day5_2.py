@@ -10,7 +10,7 @@ def remove_overlaps(id_ranges):
         if not new_range:
             new_range.append([lower, upper])
         else:
-            prev_lower, prev_upper = new_range[-1]
+            _, prev_upper = new_range[-1]
             if lower <= prev_upper + 1:
                 if upper > prev_upper:
                     new_range[-1][1] = upper

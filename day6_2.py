@@ -1,4 +1,3 @@
-import numpy as np
 import re
 arr = []
 total = 0
